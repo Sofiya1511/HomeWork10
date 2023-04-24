@@ -1,11 +1,88 @@
 body{
   margin: 0;
-
   text-align: center;
-
   color: rgb(255, 255, 255);
+ 
+}
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  height: 100vh;
+  max-width: 1280px;
+}
+
+.header {
+  padding-bottom: 20px;
+  height: 1fr;
+  background-color: rgb(110, 231, 132);
+}
+
+.header-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)) ;
+  grid-template-rows: 50px;
+  grid-auto-flow: column;
+ grid-column-gap: 10px; 
+}
+
+.list-item{
+  list-style-type: none;
+}
+
+.button {
+  border: none;
+ border-radius: 60px;
+ padding: 4px 6px;
+}
+
+.button:hover{
+background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255) ;
+}
+
+.main {
+  height: 2fr;
+  background-color:rgb(63, 128, 174);
+}
+
+
+.footer {
+  height: 100px;
+  background-color:rgb(95, 242, 255);
+}
+
+.main-container {
+  display: grid;
+  grid-template-rows:100px 100px 100px 100px 100px;  
+  grid-template-columns: repeat(auto-fill, 1fr); 
+  grid-auto-flow: dense;
+   grid-gap: 20px 20px; 
+   margin: 60px;
+}
+
+.main-item {
+  display: grid;
+ 
+  min-height: 100px;
+  background-color: rgb(34, 34, 95);
+ font-size: 24px;
+ align-items: center;
 }
 
 
 
+.three {
+  grid-column: 3 / 5;
+  grid-row: 1 / 3;
+}
 
+.six {
+  grid-column: 1 / 3;
+  grid-row: 3 / 5;
+}
+
+.nine {
+  grid-column: 3 / 5;
+  grid-row: 4 / 6;
+}
